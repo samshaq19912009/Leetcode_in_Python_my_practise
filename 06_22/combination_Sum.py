@@ -1,0 +1,19 @@
+class Solution:
+    def combinationSum(self, n, k):
+
+        ans = []
+
+        def dfs(start, sums, path):
+            if len(path) == k and sums == n:
+                ans.append(path)
+                return
+
+            if len(path) > k  or sums > n:
+                return
+
+            for x in range(start+1, 10):
+                dfs(x, sums+x, path+[x])
+
+        dfs(0,0,[])
+
+        return ans

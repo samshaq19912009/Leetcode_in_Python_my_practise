@@ -1,0 +1,16 @@
+class Solution:
+    def kthSmallestBST(self, root, k):
+        ##recursive
+        ans = []
+        def dfs(node):
+            if not node:
+                return []
+            dfs(node.left)
+            ans.append(node.val)
+            if len(ans) == k:
+                return
+            dfs(node.right)
+            
+        dfs(root)
+        return ans[-1]
+

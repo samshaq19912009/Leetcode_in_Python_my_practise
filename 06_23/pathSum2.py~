@@ -1,0 +1,9 @@
+class Solution:
+    def pathSum(self, root, sum):
+        ans = []
+        path = []
+        cur = 0
+        self.dfs(root, cur, sum, path, ans)
+
+        return ans
+

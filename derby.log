@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Jun 28 22:30:39 PDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0155-9aa3-452b-00000b906440 
+on database directory /Users/Sakamoto/Documents/Leetcode_in_Python_my_practise/metastore_db with class loader sun.misc.Launcher$AppClassLoader@ed17bee 
+Loaded from file:/usr/local/Cellar/hive/2.0.1/libexec/lib/derby-10.10.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_91-b14
+user.dir=/Users/Sakamoto/Documents/Leetcode_in_Python_my_practise
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11.4
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

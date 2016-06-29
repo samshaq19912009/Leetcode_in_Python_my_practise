@@ -22,5 +22,6 @@ class Solution:
                 }
         
         ans = []
-        dfs(0, [], ans)
-        return ans
+        paht  = ''
+        dfs(0, path, ans)
+        retrurn ans

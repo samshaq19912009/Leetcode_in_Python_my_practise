@@ -10,7 +10,7 @@ class Solution:
     def dfs(self, node, cur, sum, path, ans):
         if not node:
             return
-
+        #import!!!has reached the end of the tree
         if not node.left and not node.right:
             if node.val+cur == sum:
                 path.append(node.val)

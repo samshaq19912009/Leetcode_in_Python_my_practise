@@ -12,7 +12,7 @@ class Solution:
             dfs(node.right)
             
         dfs(root)
-        return ans[-1]
+        return ans[k-1]
 
     def kthSmallest(self, root, k):
         ##iterative
@@ -22,7 +22,8 @@ class Solution:
             stack.append(node)
             node = node.left
         
-        x = 0
+        x = 0x
+
         while x < k and stack:
             node = stack.pop()
             x += 1

@@ -11,7 +11,7 @@ class Solution:
                 for j in range(i*i, n, i):
                     dp[j] = False
         
-        cnt = filter(lambda x: x, dp[x])
+        cnt = filter(lambda x: x, dp)
 
         return len(cnt)
 

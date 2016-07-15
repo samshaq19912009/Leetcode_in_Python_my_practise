@@ -24,12 +24,14 @@ class Solution(object):
         def dfs(board):
             for x in range(9):
                 for y in range(9):
+                    #find a spot to fill
                     if board[x][y] == '.':
                         for k in '123456789':
                             board[x][y] = k
                             if check(x,y) and dfs(board):
                                 return True
                             board[x][y] = '.'
+                        #this test failure
                         return False
             #this is important!!!!!!
             return True
